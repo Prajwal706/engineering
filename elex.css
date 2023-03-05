@@ -1,0 +1,844 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+html{
+scroll-behavior: smooth;
+}
+/* To make changable background write this code ----------------------------- */
+@keyframes example {
+0%{background-image: url("front.jpg");}
+25%  {background-image: url("side.jpg");}
+50%  {background-image: url("frontside.jpg");}
+100% {background-image: url("vvside.jpg");}
+  }
+  /* body section ----------------------------------------------- */
+  body {
+/* animation: example 30s linear infinite; */
+/* background: url("front.jpg") center; */
+height: 100vh;
+width: 100%;
+overflow-x: hidden;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+/* Code to insert Loge in Navigation Bar ----------------------------------- */
+h1.logo{
+color: aliceblue;
+font-size: 25px;
+/* margin-left: 5%; */
+margin: 0px 50px 0px 5%;
+/* padding: 0px 5px 0px 5px; */
+}
+.logo span{
+color: darkorange;
+}
+.Logo{
+margin-top: 3px;
+}
+.Logo img{
+border-radius: 50%;
+margin-left: 50%;
+}
+/* Code to make Navigation Bar -------------------------------------- */
+.navbar{
+width: 100%;
+/* margin: 0px; */
+height: 55px;
+align-items: center;
+background-color: rgb(72, 17, 82);
+display: flex;
+/* position:fixed; */
+/* top: 0;
+left: 0;
+right: 0; */
+/* z-index: 1; */
+/* opacity: 0.6; */
+/* justify-content: space-between; */
+}
+
+.navbar ul{
+display: inline-flex;
+list-style-type:none ;
+
+}
+.navbar ul li{
+padding: 20px 30px 15px 30px;
+position: relative;
+font-size: 15px;
+margin-left: 0%;
+/* line-height: 40px; */
+text-align: center;
+/* border-left: 1px solid white; */
+/* float: left; */
+}
+.navbar ul li a{
+/* padding: 0px 10px 0px 10px; */
+text-decoration: none;
+color: rgb(248, 220, 12);
+display: block;
+transition: all 0.3s;
+
+}
+.navbar ul li:hover{
+color:coral;
+background-color: rgb(69, 40, 235);
+border-radius: 0px;
+/* padding: 0px 10px 0px 10px; */
+cursor: pointer;
+}
+
+.navbar ul ul {
+position: absolute;
+background-color: rgb(84, 2, 84);
+display: none;
+left: 0;
+top: 57px;
+}
+.navbar ul ul li{
+width:233px;
+/* line-break: auto; */
+}
+
+.navbar ul li:hover > ul{
+  display: block;
+  /* padding: 10px; */
+}
+.navbar ul ul ul {
+/* left: 90%; */
+margin-left: 101%;
+top: 0px;
+bottom: -15px;
+width: 200px;
+height:max-content;
+float: left;
+/* padding: 5px 5px; */
+}
+.navbar ul ul ul li{
+width: 200px;
+/* padding: 20px; */
+}
+.navbar ul ul ul li a:hover {
+display: block;
+background-color: bisque;
+color: crimson;
+padding: 6px 6px;
+border-radius: 5px;
+}
+
+#first{
+  animation: example 30s linear infinite;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding:3px 300px;
+  text-align: center;
+  align-items: center;
+  /* overflow: hidden; */
+  }
+  h1#hed1{
+  /* border-radius: 20px; */
+  color: #ffffff;
+  /* border: solid rgb(212, 0, 255); */
+  /* padding: 5px; */
+  text-shadow: 2px 2px 2px rgb(52, 0, 69);
+  /* margin: 30px ; */
+  font-size: xx-large;
+  margin-top: 0%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  }
+  .abc p{
+  width: 100%;
+  color: #FFF;
+  background:transparent;
+  padding: 0px 0px 20px 0px;
+  text-shadow:2px 2px 2px rgb(193, 12, 12);
+  font-size:medium;
+  }
+
+/* Code to insert search bar ------------------------------------------- */
+.search-container {
+display: flex;
+align-items: center;
+justify-content: center;
+background-position: center;
+  }
+.search-box{
+width: 100%;
+/* max-width: 700px; */
+background: rgba(255, 255, 255, 0.5);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+padding: 5px 5px;
+/* margin-top: -10%; */
+border: solid 1px;
+  }
+  form {
+/* margin-top: 20%; */
+display: flex;
+align-items: center;
+  }
+  
+  input[type=text] {
+/* padding: 6px; */
+/* margin-right: 16px; */
+font-size: 17px;
+border: none;
+border-width: 0px;
+width: 100%;
+/* margin-top: 1%; */
+padding: 10px 0px 10px 10px;
+margin-left: 0px;
+cursor: pointer;
+border-radius: 50px;
+background:transparent;
+  }
+  
+  button[type=submit] {
+padding: 10px;
+background: rgb(255, 255, 255);
+font-size: 17px;
+border: none;
+cursor: pointer;
+/* margin-top: 10%; */
+border-radius: 30px;
+margin-left: 1%;
+  }
+  
+  button[type=submit]:hover {
+background: rgb(239, 242, 242);
+  }
+/* input[type=text]:hover {
+background: rgba(255, 255, 255, 0.5);
+} */
+  ::placeholder{
+color: #fff;
+text-shadow: 1.5px 1.5px 1.5px rgb(3, 0, 4);
+font-size: 1.2rem;
+  }
+/* Code to design Home Page ------------------------------------------------- */
+  
+/* Code to design About Us Page ----------------------------------------- */
+#second{
+  height: 100vh;
+  width: 100%;
+  /* margin-top: 0%; */
+  text-align: center;
+  background-image: linear-gradient(rgba(0,8,51,0.3),rgba(0,8,51,0.9)), url("side.jpg");
+  background-size: cover ;
+  background-position: center;
+  /*z-index: 1; */
+}
+h1#hed2{
+  width: 100%;
+  background-color: #FFF;
+  margin-top: 0%;
+  border: solid green;
+  padding: 10px;
+  margin: 0px 0px 50px 0px;
+  /* padding: 5px; */
+}
+
+#bigbox{
+  display: flex;
+  margin: 0px;
+  /* width: 30%; */
+  /* height: 50%; */
+}
+h2.bcd{
+  color: rgb(143, 17, 17);
+/* font-size: 1.8rem; */
+padding: 5px;
+text-shadow: 1px 1px 1px rgb(183, 0, 255);
+}
+#bigbox .box img{
+  height: 200px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin:auto;
+  border-radius: 15%;
+  }
+ #bigbox .box{
+ border: 2px solid brown;
+ margin:30px;
+ padding: 20px 0px 0px 0px;
+ width:30%;
+ margin-left: 10%;
+ border-radius: 20px;
+ background-color:rgb(226, 215, 215)
+  }
+#bigbox .box p{
+  font-size:medium;
+  padding: 20px;
+  text-align: justify;
+  }
+  .xxx{
+border: 2px solid brown;
+margin:3px;
+/* padding: 20px 0px 0px 0px; */
+margin-top: 3%;
+width:35%;
+display: flex;
+height: 30%;
+margin-left: 12%;
+border-radius: 20px;
+background-color:rgb(226, 215, 215)
+}
+  p.abtu{
+text-align: center;
+margin: 30px 18px 30px 18px;
+  }
+p.abtu span{
+font-size:large;
+text-align:center;
+justify-content: center;
+color: rgb(143, 17, 17);
+/* font-size: 1.8rem; */
+padding: 5px;
+text-decoration:solid underline;
+text-shadow: 1px 1px 1px rgb(183, 33, 255);
+
+  }
+  p.abtu a{
+  text-decoration: none;
+  }
+  
+  p.abtu a:hover{
+ color: red;
+ }
+/* Code to design Products Page -------------------------------------------- */
+  #third {
+height: 100vh;
+/* margin-top: 0%; */
+text-align: center;
+background-image: linear-gradient(rgba(0,8,51,0.3),rgba(0,8,51,0.9)), url("vside.jpg");
+background-size: cover ;
+background-position: center; 
+  }
+
+  h1#hed3{
+width: 100%;
+background-color: #FFF;
+border: solid green;
+margin-top: 0%;
+padding: 10px;
+margin: 0px 0px 50px 0px;
+/* padding: 5px; */
+  }
+  #third #bigbox .box0{
+ border: 2px solid brown;
+ margin:30px;
+ padding: 20px 0px 0px 0px;
+ width:30%;
+ margin-top: 0%;
+ /* height: 150%; */
+ margin-left: 10%;
+ border-radius: 20px;
+ background-color:rgb(255, 255, 255)
+ }
+  #bigbox .box0 img{
+ height: 90%;
+ display: block;
+ margin:auto;
+ width: 100%;
+ padding: 5px;
+ border-radius: 5%;
+ }
+
+  #third #bigbox .box0 a{
+cursor: pointer;
+text-decoration: none;
+ }
+
+ #third #bigbox .box1{
+border: 2px solid brown;
+margin:30px;
+padding: 20px 0px 0px 0px;
+width:30%;
+margin-left: 15%;
+margin-top: 0%;
+border-radius: 20px;
+background-color:rgb(255, 255, 255)
+}
+ #bigbox .box1 img{
+height: 90%;
+display: block;
+margin:auto;
+padding: 5px;
+width: 100%;
+border-radius: 5%;
+}
+  
+  #third #bigbox .box1 a{
+ cursor: pointer;
+ text-decoration: none;
+  }
+ /* Code to design Services Page ---------------------------------------------- */
+#forth{
+ height: 100vh;
+ /* margin-top: 0%; */
+ text-align: center;
+ background-image: linear-gradient(rgba(0,8,51,0.3),rgba(0,8,51,0.9)), url("vvside.jpg");
+ background-size: cover ;
+ background-position: center; 
+}
+ 
+h1#hed4{
+ width: 100%;
+ background-color: #FFF;
+ border: solid green;
+ margin-top: 0%;
+ margin: 0px 0px 50px 0px;
+ padding: 10px;
+}
+ #bigbox .box2{
+border: 2px solid brown;
+margin:20px;
+padding: 20px 0px 0px 0px;
+width:30%;
+height: 30%;
+margin-left: 12%;
+border-radius: 20px;
+background-color:rgb(255, 255, 255)
+}
+ #bigbox .box2 img{
+height: 150px;
+width:auto;
+display: block;
+margin:auto;
+border-radius: 5%;
+}
+.box2 p{
+  text-align:justify;
+  margin: 30px 18px 30px 18px;
+}
+p.ser a{
+  text-decoration: none;
+  }
+
+  p.ser a:hover{
+  color: red;
+  }
+/* Code to design Contact us Page ---------------------------------------------- */
+#five{
+
+  height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255,255,255,0.9)), url("side.jpg");
+  background-size: cover;
+  background-position: center; 
+
+ }  
+
+ h1#hed5{
+  width: 100%;
+  padding: 10px;
+  background-color: #FFF;
+  border: solid green;
+  margin-top: 0%;
+  margin: 0px 0px 50px 0px;
+ }
+
+  #five::before{
+content:"";
+position:absolute;
+width: 100%;
+height: 100%;
+  
+}
+ /* Code to create form ------------------------------------- */
+#form1{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 34px;
+}
+#form1 input,
+#form1 textarea{ 
+ width: 100%;
+ padding: 0.5rem;
+ border-radius: 9px;
+ font-size: 0.8rem;
+}
+#form1 form{
+ width: 18%;
+ display: block;
+ position:static;
+}
+#form1 label{
+ font-size: 1rem;
+}
+
+.form11 input{
+  
+  border-radius: #000;
+  background-color: #FFF;
+  
+}
+.form11 input::placeholder{
+  font-size: small;
+  text-shadow: none;
+  color: #000;
+}
+.form22 input::placeholder{
+  font-size: small;
+  text-shadow:none;
+  color: #000;
+}
+.form33 input::placeholder{
+  font-size: small;
+  text-shadow: none;
+  color: #000;
+}
+.form44 input::placeholder{
+  font-size: small;
+  text-shadow: none;
+  color: #000;
+}
+/* Code to insert Social Media Icons---------------------------------- */
+ #con{
+
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+
+  .con1{
+ padding: 0px 4px 0px 4px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ margin-top: 0%;
+}
+
+.con1 img{
+ width:60px;
+ height: 60px;
+ text-decoration: none;
+ margin: 0 20px;
+ align-items: center;
+ justify-content: center;
+
+}
+.con1 h4.icons {
+ display:block;
+ /* margin: 0 50px; */
+ position:absolute;
+ margin-top: 7%;
+  }
+  .con1 h4.icons a{
+ text-decoration: none;
+  }
+  .con1 h4.icons a:hover{
+  color: rgb(255, 0, 0);
+  /* background-color: ; */
+  }
+
+  /* Code to insert Location on Google Map ----------------------------------- */
+  #six{
+    background: url("blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1#hed6{
+  width: 100%;
+  padding: 10px;
+  background-color: #FFF;
+  border: solid green;
+  margin-top: 0%;
+  /* align-items: center; */
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+ }
+  .loc{
+ width: 100%;
+ height: 100vh;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+  }
+  iframe{
+ width: 80%;
+ height: 80vh;
+  }
+/* Code for Home Appliances -------------------------------- */
+  #frst{
+ background: url("front.jpg");
+ animation: example 30s linear infinite;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ display: flex;
+ /* margin-top:0%; */
+ height: 100vh;
+ flex-direction: column;
+ justify-content: center;
+ padding:3px 300px;
+ align-items: center;
+ /* overflow: hidden; */
+ }
+
+ h1#head12{
+width: 180%;
+text-align: center;
+margin-top: 0%;
+background-color: #FFF;
+/* margin-top: 0%; */
+justify-content: center;
+border: solid green;
+padding: 5px;
+margin: 0px 0px 110px 0px;
+/* padding: 5px; */
+ }
+ /* Code for Kitchen Items--------------------------- */
+ #bigbox .box12{
+border: 2px solid brown;
+margin:10px;
+padding: 20px 10px 0px 10px;
+width:100%;
+cursor: pointer;
+/* height: 0%; */
+margin-left: -10%;
+border-radius: 20px;
+background-color:rgb(255, 255, 255)
+}
+ #bigbox .box12 img{
+height: 70%;
+display: block;
+margin:auto;
+width: 100%;
+/* padding: 20px; */
+border-radius: 5%;
+ }
+ .box12 a{
+text-decoration: none;
+ }
+ h2.gad{
+color: rgb(143, 17, 17);
+ /* font-size: 1.8rem; */
+ padding: 10px 0px 0px 0px;
+ text-align: center;
+ text-shadow: 1px 1px 1px rgb(183, 0, 255);
+ }
+.box12 p{
+  text-align:justify;
+  margin: 10px 18px 30px 18px;
+}
+
+/* Code for Room Items---------------------------- */
+#bigbox .box13{
+ border: 2px solid brown;
+margin:10px;
+padding: 20px 10px 0px 10px;
+width:100%;
+  cursor: pointer;
+  /* height: 50%; */
+  margin-left: 25%;
+  border-radius: 20px;
+  background-color:rgb(255, 255, 255)
+  }
+  .box13 a{
+ text-decoration: none;
+  }
+#bigbox .box13 img{
+  height: 70%;
+display: block;
+margin:auto;
+width: 100%;
+/* padding: 20px; */
+border-radius: 5%;
+}
+h2.rom{
+  color: rgb(143, 17, 17);
+/* font-size: 1.8rem; */
+padding: 10px 0px 5px 0px;
+text-align: center;
+text-shadow: 1px 1px 1px rgb(183, 0, 255);
+}
+  .box13 p{
+ text-align:justify;
+ margin: 10px 18px 30px 18px;
+ color: darkblue;
+}
+
+/* Code for Electronics Gadgets--------------------------- */
+ #frst1{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding:3px 300px;
+align-items: center;
+/* overflow: hidden; */
+}
+  
+h1#head33{
+  width: 180%;
+  text-align: center;
+  background-color: #FFF;
+  margin-top: 0%;
+  border: solid green;
+  padding: 5px;
+  margin: -4px 0px 50px 0px;
+  /* padding: 5px; */
+}
+/* Code for Personal Use items-------------------------------- */
+
+#bigbox .box32{
+border: 2px solid brown;
+margin:10px;
+padding: 20px 10px 0px 10px;
+width:100%;
+cursor: pointer;
+/* height: 0%; */
+margin-left: -10%;
+border-radius: 20px;
+background-color:rgb(255, 255, 255)
+}
+ #bigbox .box32 img{
+height: 70%;
+display: block;
+margin:auto;
+width: 100%;
+/* padding: 20px; */
+border-radius: 5%;
+ }
+ .box32 a{
+text-decoration: none;
+ }
+ /* h2.gad{
+color: rgb(143, 17, 17);
+ font-size: 1.8rem;
+ padding: 10px 0px 0px 0px;
+ text-align: center;
+ text-shadow: 1px 1px 1px rgb(183, 0, 255);
+ } */
+.box32 p{
+  text-align:justify;
+  margin: 10px 18px 30px 18px;
+}
+
+/* Code for Common Use Items---------------------------- */
+#bigbox .box33{
+ border: 2px solid brown;
+margin:10px;
+padding: 20px 10px 0px 10px;
+width:100%;
+cursor: pointer;
+  /* height: 50%; */
+margin-left: 25%;
+border-radius: 20px;
+background-color:rgb(255, 255, 255)
+  }
+  .box33 a{
+ text-decoration: none;
+  }
+#bigbox .box33 img{
+height: 70%;
+display: block;
+margin:auto;
+width: 100%;
+/* padding: 20px; */
+border-radius: 5%;
+}
+h2.rom{
+  color: rgb(143, 17, 17);
+/* font-size: 1.8rem; */
+padding: 10px 0px 5px 0px;
+text-align: center;
+text-shadow: 1px 1px 1px rgb(183, 0, 255);
+}
+  .box33 p{
+ text-align:justify;
+ margin: 10px 18px 30px 18px;
+ color: darkblue;
+}
+
+.burg{
+display: none;
+position: absolute;
+cursor: pointer;
+top: 15px;
+right: 0%;
+}
+.line{
+  width: 30px;
+  background-color: rgb(0, 0, 0);
+  height: 4px;
+  margin: 3px 3px;
+}
+
+@media only screen and (max-width:1322px){
+  .navbar{
+    flex-direction: column;
+    height: 362px;
+    transition: all 0.3s ease-out;
+
+}
+.navbar ul{
+flex-direction: column;
+}
+h1#hed1{
+  margin-top:100%;
+  width: 256%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1.logo{
+  background-color: rgb(72, 17, 82);
+  width: 100%;
+  text-align: center;
+}
+.search-container {
+  /* margin-top: 20%; */
+   margin-top:0% ;
+  
+}
+.search-box{
+  width: 50%;
+  /* margin-top: 10%; */
+}
+.burg{
+  display: block;
+  right: 5%;
+  background-color: rgb(255, 255, 255) ;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+}
+.h-nav-res{
+  height: 72px;
+}
+.opag-res{
+  opacity: 0;
+}
+.logo{
+  opacity: 0;
+}
+}
+/* @media only screen and (min-width:719px){
+  h1#hed1{
+    margin-top:-250%;
+    width: 256%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+} */
